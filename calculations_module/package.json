@@ -1,10 +1,10 @@
 {
   "name": "section4",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/js/calculations.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "lite-server",
+    "start" : "lite-server& tsc -w",
     "build": "tsc second.ts --outDir ../../dist --sourceMap"
   },
   "author": "",
