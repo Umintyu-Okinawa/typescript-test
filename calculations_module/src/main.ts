@@ -1,11 +1,11 @@
-import {add as add1, subtract as subtract1, multiply as multiply1, divide as divide1} from "./calculations";
+import {add , subtract , multiply , divide} from "./calculations";
 
-const add : number = add1(1,2);
-const subtract : number = subtract1(1,2);
-const multiply : number = multiply1(1,2);
-const divide : number = divide1(1,2);
+const addResult : number = add(1,2);
+const subtractResult : number = subtract(1,2);
+const multiplyResult : number = multiply(1,2);
+const divideResult : number = divide(1,2);
 
-console.log(add);
-console.log(subtract);
-console.log(multiply);
-console.log(divide);
+console.log(addResult);
+console.log(subtractResult);
+console.log(multiplyResult);
+console.log(divideResult);
