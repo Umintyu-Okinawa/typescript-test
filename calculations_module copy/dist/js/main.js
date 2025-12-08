@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const calculations_1 = require("./calculations");
+const addResult = (0, calculations_1.add)(1, 2);
+const subtractResult = (0, calculations_1.subtract)(1, 2);
+const multiplyResult = (0, calculations_1.multiply)(1, 2);
+const divideResult = (0, calculations_1.divide)(1, 2);
+console.log(addResult);
+console.log(subtractResult);
+console.log(multiplyResult);
+console.log(divideResult);
