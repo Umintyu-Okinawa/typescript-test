@@ -1,0 +1,20 @@
+{
+  "name": "section4",
+  "version": "1.0.0",
+  "main": "./dist/js/calculations.js",
+  "scripts": {
+    "test": "jest",
+    "start": "lite-server& tsc -w",
+    "build": "tsc second.ts --outDir ../../dist --sourceMap"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "lite-server": "^2.6.1",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.0.0"
+  }
+}
