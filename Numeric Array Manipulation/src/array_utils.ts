@@ -1,44 +1,45 @@
-//配列の合計値を計算して表示する関数
+// 合計値を返す
+function sum(array: number[]): number {
+  return array.reduce((a, b) => a + b, 0);
+}
+
+// 最大値を返す
+function max(array: number[]): number {
+  return array.reduce((a, b) => Math.max(a, b));
+}
+
+// 最小値を返す
+function min(array: number[]): number {
+  return array.reduce((a, b) => Math.min(a, b));
+}
+
+
+// 合計値を表示
 export function Sum(array: number[]): void {
-    
-    //配列の合計値を計算して表示する
-    console.log(array.reduce((a, b) => a + b, 0));
+  console.log(sum(array));
 }
 
-//配列の平均値を計算して表示する関数
+// 平均値を表示
 export function Average(array: number[]): void {
-
-    //配列の平均値を計算して表示する
-    console.log(array.reduce((a, b) => a + b, 0) / array.length);
+  console.log(sum(array) / array.length);
 }
 
-
-//配列の最大値を計算して表示する関数
+// 最大値を表示
 export function Max(array: number[]): void {
-
-    //配列の最大値を計算して表示する
-    console.log(array.reduce((a, b) => Math.max(a, b), 0));
+  console.log(max(array));
 }
 
-//配列の最小値を計算して表示する関数
+// 最小値を表示
 export function Min(array: number[]): void {
-
-    //配列の最小値を計算して表示する
-    console.log(array.reduce((a, b) => Math.min(a, b), 0));
-
+  console.log(min(array));
 }
 
-//配列の昇順を行う関数
+// 昇順ソート
 export function AscendingSort(array: number[]): void {
-
-    //配列の昇順を行う
-    console.log(array.sort((a, b) => a - b));
+  console.log([...array].sort((a, b) => a - b));
 }
 
-//配列の降順を行う関数
+// 降順ソート
 export function DescendingSort(array: number[]): void {
-
-    //配列の降順を行う
-    console.log(array.sort((a, b) => b - a));
+  console.log([...array].sort((a, b) => b - a));
 }
-
