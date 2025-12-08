@@ -28,10 +28,17 @@ export function Min(array: number[]): void {
 
 }
 
-//配列のソートを行う関数
-export function Sort(array: number[]): void {
+//配列の昇順を行う関数
+export function AscendingSort(array: number[]): void {
 
-    //配列のソートを行う
+    //配列の昇順を行う
     console.log(array.sort((a, b) => a - b));
+}
+
+//配列の降順を行う関数
+export function DescendingSort(array: number[]): void {
+
+    //配列の降順を行う
+    console.log(array.sort((a, b) => b - a));
 }
 

@@ -1,4 +1,5 @@
-import { Sum, Average, Max, Min, Sort } from "./array_utils.js";
+//配列操作モジュールをインポートする
+import { Sum, Average, Max, Min, AscendingSort, DescendingSort } from "./array_utils.js";
 //配列の合計値を計算して表示する
 Sum([1, 2, 3, 4, 5]);
 //配列の平均値を計算して表示する
@@ -8,6 +9,6 @@ Max([1, 2, 3, 4, 5]);
 //配列の最小値を計算して表示する
 Min([1, 2, 3, 4, 5]);
 //配列の昇順を行う
-Sort([1, 2, 3, 4, 5]);
+AscendingSort([1, 2, 3, 4, 5]);
 //配列の降順を行う
-Sort([5, 4, 3, 2, 1]);
+DescendingSort([5, 4, 3, 2, 1]);
